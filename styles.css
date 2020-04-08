@@ -9,7 +9,7 @@ body {
   align-items: center;
 }
 .canvas {
-  width: 550px;
+  width: 750px;
   height: 550px;
   background-color: white;
   border: 15px inset;
@@ -24,12 +24,23 @@ body {
 }
 .controls .controls__range {
   margin-bottom: 20px;
+  display: flex;
+  align-items: top;
+  background-color: white;
+  padding: 5px 20px;
+  border: 3px outset;
+  box-shadow: 6px 10px 30px -12px rgba(38, 38, 38, 1);
+}
+.controls .controls__range input {
+  cursor: pointer;
 }
 .controls .controls__btns button {
   all: unset;
   cursor: pointer;
+  text-align: center;
   background-color: white;
   padding: 5px 10px;
+  width: 70px;
   border: 3px outset;
   box-shadow: 6px 10px 30px -10px rgba(38, 38, 38, 1);
   margin-bottom: 20px;
@@ -51,8 +62,7 @@ body {
   /* box-shadow: 5px 10px 20px -8px rgba(38, 38, 38, 1); */
 }
 .controls__colours .current {
-  background-color: white;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 .controls__colours .black {
   background-color: #3d3d3d;
@@ -61,23 +71,24 @@ body {
   background-color: white;
 }
 .controls__colours .red {
-  background-color: #f44336;
+  background-color: #fb2412;
 }
 .controls__colours .orange {
-  background-color: #fa983a;
+  background-color: #f36e21;
 }
 .controls__colours .yellow {
-  background-color: #f6b93b;
+  background-color: #ffdf14;
 }
 .controls__colours .green {
-  background-color: #00b894;
+  background-color: #319113;
 }
-.controls__colours .sky {
-  background-color: #03a9f4;
+.controls__colours .sky,
+.controls__colours .current {
+  background-color: #70c9f5;
 }
 .controls__colours .blue {
   background-color: #1e3799;
 }
 .controls__colours .purple {
-  background-color: #a55eea;
+  background-color: #6d51b7;
 }
